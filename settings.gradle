@@ -6,11 +6,6 @@ pluginManagement {
             url = 'https://maven.minecraftforge.net/'
         }
         maven {
-            name = 'Parchment'
-            url = 'https://maven.parchmentmc.org'
-        }
-
-        maven {
             name = 'SpongePowered Mixin'
             url = 'https://repo.spongepowered.org/repository/maven-public/'
         }

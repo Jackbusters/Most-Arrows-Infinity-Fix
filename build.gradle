@@ -188,7 +188,7 @@ tasks.named('processResources', ProcessResources) {
 
 mixin {
     // MixinGradle Settings
-    add sourceSets.main, 'mixins.mostarrowsinfinityfix.refmap.json'
+    add sourceSets.main, 'mostarrowsinfinityfix.mixins.refmap.json'
     config 'mostarrowsinfinityfix.mixins.json'
 
     debug.verbose = true
@@ -199,7 +199,6 @@ mixin {
 tasks.named('jar', Jar) {
     manifest {
         attributes([
-            'MixinConfigs'            : "${mod_id}.mixins.json",
             'Specification-Title'     : mod_id,
             'Specification-Vendor'    : mod_authors,
             'Specification-Version'   : '1', // We are version 1 of ourselves
