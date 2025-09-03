@@ -3,7 +3,6 @@
   "minVersion": "0.8",
   "package": "com.jackbusters.mostarrowsinfinityfix.mixins",
   "compatibilityLevel": "JAVA_21",
-  "refmap": "mostarrowsinfinityfix.mixins.refmap.json",
   "mixins": [
     "arrowsFixAllArrows",
     "arrowsFixForge"
