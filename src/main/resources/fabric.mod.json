@@ -9,7 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/most-arrows-infinity-fix",
-		"issues": "https://www.curseforge.com/minecraft/mc-mods/most-arrows-infinity-fix/issues"
+		"issues": "https://www.curseforge.com/minecraft/mc-mods/most-arrows-infinity-fix/issues",
+        "sources": "https://github.com/Jackbusters/Most-Arrows-Infinity-Fix"
 	},
 	"license": "All Rights Reserved",
 	"environment": "*",
