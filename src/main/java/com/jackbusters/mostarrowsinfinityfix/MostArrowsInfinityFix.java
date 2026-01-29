@@ -3,7 +3,7 @@ package com.jackbusters.mostarrowsinfinityfix;
 import net.minecraft.core.component.DataComponentMap;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.Potion;
 import net.neoforged.bus.api.IEventBus;
@@ -20,7 +20,7 @@ import java.util.Objects;
 @Mod(MostArrowsInfinityFix.MOD_ID)
 public class MostArrowsInfinityFix {
     public static final String MOD_ID = "mostarrowsinfinityfix";
-    public static List<ResourceLocation> resourceLocationBlacklist = new ArrayList<>();
+    public static List<Identifier> resourceLocationBlacklist = new ArrayList<>();
     public static List<String> potionAsStringBlacklist = new ArrayList<>();
 
 
@@ -35,7 +35,7 @@ public class MostArrowsInfinityFix {
      */
     public void setup(final FMLCommonSetupEvent event) {
         for (String string : ArrowCommonConfig.infinityBlacklist.get())
-            resourceLocationBlacklist.add(ResourceLocation.tryParse(string));
+            resourceLocationBlacklist.add(Identifier.tryParse(string));
         potionAsStringBlacklist.addAll(ArrowCommonConfig.potionBlacklist.get());
     }
 
@@ -54,7 +54,7 @@ public class MostArrowsInfinityFix {
      * @return True if passed ItemStack's ID appears in the item ID blacklist. False otherwise.
      */
     public static boolean isBlacklistedProjectile(ItemStack projectile) {
-        ResourceLocation itemResourceLocation = BuiltInRegistries.ITEM.getKey(projectile.getItem());
+        Identifier itemResourceLocation = BuiltInRegistries.ITEM.getKey(projectile.getItem());
         return resourceLocationBlacklist.contains(itemResourceLocation);
     }
 
