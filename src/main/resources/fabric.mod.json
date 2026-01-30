@@ -24,8 +24,8 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
-		"minecraft": "1.21.8",
+		"minecraft": "1.21.11",
 		"java": ">=21",
-		"forgeconfigapiport": ">=21.8.0"
+		"forgeconfigapiport": ">=21.11.0"
 	}
 }
